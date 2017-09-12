@@ -1,0 +1,75 @@
+.boxes {
+    background-color: #E2D7C8; 
+    margin: auto ;
+    padding: 13px 0px 75px 0px;
+    width: 620px;
+    height: 780px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*this is the first box*/
+
+h1{
+    width: 620px;
+    height: 44px;
+    background-color:#E2D7C8;
+    margin: 13px solid #FF1200;
+    box-sizing: border-box;
+    text-align: left
+}
+/*this is the LEFT box*/
+h2{
+    width: 310px;
+    height: 436px;
+    background-color: #E2D7C8;
+    margin: 13px solid #FF1200;
+    float: left;
+    box-sizing: border-box;
+}
+/*this is the RIGHT box*/
+h3{
+    width: 310px;
+    height: 436px;
+    background-color: #E2D7C8;
+    float: right;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h4{
+    width: 620px;
+    height: 184px;
+    background-color: #E2D7C8;;
+    box-sizing: border-box;
+    margin: 522px 0px 76px 0px;
+}
+
+.szemelyes_adatok {
+    width: 300px;
+    height: 40px;
+    background-color: #95898E;
+    border: none;
+    box-sizing: border-box;
+    margin-left: 100px;
+    font-size: 15px;
+}
+
+.nev{
+    margin-left: 100px;
+}
+
+.nem{
+    margin-left: 100px;
+}
+
+.markaszeretet{
+    margin-left: 100px;
+}
+
+.bal-marka{
+    margin-left: 100px;
+}
+
+.jobb-marka{
+    margin-left: 200 px;
+}

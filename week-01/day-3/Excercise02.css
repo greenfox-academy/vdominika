@@ -1,0 +1,33 @@
+#directions {
+    margin: auto;
+    height: 500px;
+    width: 350px;
+    font-size: 36px;
+    border: 15px solid #0084F2;
+    font-family: sans-serif;
+    color:white;
+    text-align: center;
+}
+
+#directions > div{
+    padding-top: 40px;
+    height: 85px;
+    position: relative;
+}
+
+.north {
+    background-color: #FA6C68; 
+}
+
+.east{
+    background-color: #F5F05F;   
+}
+
+.south{
+    background-color:#93E8E6; 
+}
+
+.west{
+    background-color:#6990E2;
+}
+
