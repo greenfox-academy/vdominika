@@ -1,4 +1,4 @@
-public class CodingHours {
+/*public class CodingHours {
     public static void main(String[] args) {
         int a = 6, b = 5, c = 17;
         System.out.println(a*b*c);
@@ -7,4 +7,4 @@ public class CodingHours {
         float PercentageCode = (((float) (dailyCode * workDays))/ workHours);
         int percentage = (int) Math.ceil ((1 - d ) * 100);
     }
-}
+}*/

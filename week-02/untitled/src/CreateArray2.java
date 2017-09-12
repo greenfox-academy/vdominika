@@ -1,4 +1,4 @@
-public class CreateArray2 {
+/*public class CreateArray2 {
     public static void main(String[] args) {
         int [] bestNumbersEver = new int[10];
 
@@ -12,4 +12,4 @@ public class CreateArray2 {
             System.out.println(bestNumbersEver[9 -i]);
         }
     }
-}
+}*/
