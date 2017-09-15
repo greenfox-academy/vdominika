@@ -20,9 +20,20 @@ public class Anagram {
 //        System.out.println(Str2.length());
 //
        if (Str1.length() == Str2.length()){
-            System.out.println("These are same long words!");
+           System.out.println("These are same long words!");
+           System.out.println("Is it an anagram?");
+
+           System.out.println(Str1.contains("a"));
 //    }
 //        else if (){
 
         }
+//        public boolean containsHelper(String Str1, String Str2){
+//            for (int i = 0; i < Str2.length(); i ++){
+//                if (!word.contains(String.valueOf(Str2.charAt(i)))){
+//                    return false;
+//                }
+//            }
+//            return true;
+//        }
 }}
