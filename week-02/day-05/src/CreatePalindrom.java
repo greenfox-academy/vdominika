@@ -16,7 +16,7 @@ public class CreatePalindrom {
             reversedWord = reversedWord + word.charAt(i);
         }
 
-        System.out.println(" Reversed Word : "+reversedWord);
+        System.out.println(userInput1+reversedWord);
     }
 
 }
