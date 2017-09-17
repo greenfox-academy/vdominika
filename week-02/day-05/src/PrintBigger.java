@@ -1,7 +1,7 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class PrintBigger {
-    public static void main (String[] arg);{
+    public static void main (String[] arg){
 
     Scanner myScanner = new Scanner(System.in){
 
@@ -18,4 +18,4 @@ public class PrintBigger {
                 System.out.println(b); }
     }
     }
-    }
+    }*/
