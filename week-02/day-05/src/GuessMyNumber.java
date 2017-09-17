@@ -1,23 +1,36 @@
-import java.util.Scanner;
 
-public class GuessMyNumber {
-    public static void main(String[] args) {
+ import java.util.Scanner;
 
-        Scanner reader = new Scanner(System.in);  // Reading from System.in
-        System.out.println("Enter a number: ");
-        int n = reader.nextInt();
+         public class GuessMyNumber {
+     public static void main(String[] args) {
 
-        int myNumber = 44;
+                        Scanner myScanner = new Scanner(System.in);
+                System.out.println("Give me the number range starting from:");
+                int fromRange = myScanner.nextInt();
+                System.out.println("Give me the number range ending:");
+                int endRange = myScanner.nextInt();
 
-        if (n > 44) {
-            System.out.println("That is too much, please try again!");
-        }
-        if (n < 44) {
-            System.out.println("That is too low, please try again!");
-        }
-        if (n==44){
-            System.out.println("That's correct!");
-        }
-    }
-}
+                        int numberToGuess = (int) (((endRange - fromRange) * Math.random()) + fromRange);
+                int lives = 5;
 
+                        System.out.println("I have the number between " + fromRange + "-" + endRange + ". You have " + lives + " lives.");
+
+                        int guess = myScanner.nextInt();
+
+                        while (lives > 1) {
+                        if (guess == numberToGuess) {
+                                System.out.println("Congratulations. You won!");
+                                break;
+                            } else if (guess > numberToGuess) {
+                                lives -= 1;
+                                System.out.println("Too high! You have " + lives + " left.");
+                                guess = myScanner.nextInt();
+                            } else if (guess < numberToGuess) {
+                                lives -= 1;
+                                System.out.println("Too low! You have " + lives + " left.");
+                                guess = myScanner.nextInt();
+                            }
+                    }
+                System.out.println("Sorry, you lost!");
+            }
+ }
