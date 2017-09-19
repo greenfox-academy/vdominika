@@ -3,20 +3,14 @@ import java.util.Scanner;
 public class DivideByZero {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please give a number");
+//        System.out.println("Please give a number");
+        double divider = scanner.nextDouble();
 
-        }
-
-        public static void Divider(double divider){
-
-        double result = divider / 10;
-
-        if (divider == 0){
-                System.out.println("fail");}
-        else{
-                System.out.println(result);
-
-        return;
+        try{
+            double result = divider / 10;
+            System.out.println(result);}
+        catch(ArithmeticException e){
+            System.out.println("fail");
         }
 
 
