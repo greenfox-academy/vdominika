@@ -11,11 +11,11 @@ public class CountFromTo {
         int b = scanner.nextInt();
 
         if (a >= b) {
-            System.out.println("The first number should be bigger");
+            System.out.println("The first number should be bigger");}
 
         else {
-            for( b, b > a; b--);
+            for( b; b > a; b--);
             }
         }
     }
-}
+
