@@ -2,9 +2,17 @@
 // lowercase 'x' chars have been changed to 'y' chars.
 public class String {
     public static void main(String[] args) {
-    int String: "Ebben a szovegben sok az x, de meg tobb az xxxx";
+    String s = "Ebben a szovegben sok az x, de meg tobb az xxxx";
+    string1 (s);
     }
-    public static int string1(String){
-        if ()
+    public static String string1(String s){
+        if (s.length() == 0){
+            return "";
+        } else if (s.endWith ("x")) {
+            return "y";
+        }else
+            return string1(s.substring(s.length()-1) + )
+
     }
-}*/
+}
+*/
