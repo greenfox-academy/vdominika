@@ -2,14 +2,23 @@ public class Tree {
 
     String type;
     String leafcolor;
-    Int age;
+    int age;
     String sex;
 
-    public Tree (String type, String leafcolor, Int age, String sex);
+    public Tree (String type, String leafcolor, int age, String sex) {
         this.type = type;
         this.leafcolor = leafcolor;
         this.age = age;
         this.sex = sex;
+
+    }
+
+    public Tree (){
+        this.type = "";
+        this.leafcolor = "";
+        this.age = 0;
+        this.sex = "";
+    }
 
     public void speak(){
         System.out.println ("Hi, my type is "+ type );
