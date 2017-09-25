@@ -35,5 +35,5 @@ public class Dominoes {
         dominoes.add(new Domino(7, 1));
         return dominoes;
     }
-   
+
 }
