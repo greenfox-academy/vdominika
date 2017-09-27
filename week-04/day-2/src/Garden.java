@@ -1,17 +1,23 @@
-import java.util.List;
-
 public class Garden {
     int flower;
     int trees;
-    int waterFlowers;
-    int waterTrees;
-    int allTheWaters;
+    double waterFlowers;
+    double waterTrees;
+    double allTheWaters;
 
-    public void watering(int waterFlowers, int waterTrees, int allTheWaters){
+
+    public void watering(double waterFlowers, double waterTrees, double allTheWaters){
         if (waterFlowers < 5){
-            waterFlowers = waterFlowers + allTheWaters/2 && waterTrees = waterTrees + allTheWaters/2
-    } else if (waterTrees < 10){
-            
+            waterFlowers = waterFlowers + allTheWaters/2*0.75;
+            waterTrees = waterTrees + allTheWaters/2*0.4;
+        } else if (waterTrees < 10){
+            waterFlowers = waterFlowers;
+            waterTrees = waterTrees + allTheWaters*0.4;
+        }else{
+            waterFlowers = waterFlowers;
+            waterTrees = waterTrees;
         }
+
+    }
 }
-}
+

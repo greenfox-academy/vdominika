@@ -3,18 +3,16 @@ public class Flower extends Garden {
     int blueFlower;
     int waterFlowers;
 
-    public void drink(){
-        for (int i = 0; i < ; i++) {
-            
-        }
-    }public void need(){
-        if (){
-            System.out.println ("The yellow flower needs water" );
+
+    public void need() {
+        if (allTheWaters*0.75 < 20) {
+            System.out.println ("The yellow flower needs water");
             System.out.println ("The blue flower needs water");
-        } else () {
+        } else  {
             System.out.println ("The yellow flower does not need water");
             System.out.println ("The blue flower does not need water");
         }
 
+    }
 }
 
