@@ -1,17 +1,21 @@
 public class Tree extends Garden {
-    int purpleTree;
-    int orangeTree;
-    int waterTrees;
 
+    public Tree(String color, int currentWater) {
+        this.color = color;
+        this.currentWater = currentWater;
+    }
 
-    public void need() {
-        if (allTheWaters * 0.4 < 40) {
-            System.out.println ("The purple tree needs water");
-            System.out.println ("The orange tree needs water");
+    public void status() {
+        if (currentWater < 10) {
+            System.out.println("The " + color + " Tree needs water");
         } else {
-            System.out.println ("The purple tree does not need water");
-            System.out.println ("The orange tree does not need water");
+            System.out.println("The " + color + " Tree doesn`t need water");
         }
+    }
 
+    public void wateringTree (int wateringAmount) {
+        if (currentWater < 10) {
+            currentWater += (wateringAmount * 0.4);
+        }
     }
 }
