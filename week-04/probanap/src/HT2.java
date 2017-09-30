@@ -1,4 +1,4 @@
-import java.util.Arrays;
+/*import java.util.Arrays;
 
 
 public class HT2 {
@@ -29,4 +29,4 @@ public class HT2 {
     public void displayTheStack(){
         int increment = 0;
     }
-}
+}*/
