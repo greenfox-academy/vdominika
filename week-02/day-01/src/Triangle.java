@@ -17,6 +17,7 @@ public class Triangle {
 
         for (int i = 1; i < input; i++) {
             for (int j = 0; j < i; j++) {
+                if
                 System.out.print ("*");
             }
             System.out.println ( );

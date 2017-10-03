@@ -19,10 +19,10 @@ public class PositionedImage {
         }
 
     }
-
     public void draw(Graphics graphics) {
         if (image != null) {
             graphics.drawImage(image, posX, posY, null);
-        }
+
     }
+}
 }
