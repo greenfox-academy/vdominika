@@ -48,7 +48,7 @@ public class Board extends JComponent implements KeyListener {
             for (int j = 0; j < 10; j++) {
                 PositionedImage imageFloor = new PositionedImage ("Assets/floor.png", 72 * i, 72 * j);
                 PositionedImage imageWall = new PositionedImage ("Assets/wall.png", 72 * i, 72 * j);
-
+                imageFloor.asd = "alma";
                 if (Board [i] [j] == 0) {
                     imageFloor.draw (graphics);
                 } else if (Board [i][j] == 1) {
@@ -91,14 +91,19 @@ public class Board extends JComponent implements KeyListener {
         // When the up or down keys hit, we change the position of our box
         if (e.getKeyCode ( ) == KeyEvent.VK_UP) {
             theHero.posY -= 100;
+            theHero.readImage ("Assets/hero-up.png");
         } else if (e.getKeyCode ( ) == KeyEvent.VK_DOWN) {
             theHero.posY += 100;
+            theHero.readImage ("Assets/hero-down.png");
         } else if (e.getKeyCode ( ) == KeyEvent.VK_RIGHT) {
             theHero.posX += 100;
+            theHero.readImage ("Assets/hero-right.png");
         } else if (e.getKeyCode ( ) == KeyEvent.VK_LEFT) {
-            theHero.posX += -100;}
+            theHero.posX += -100;
+            theHero.readImage ("Assets/hero-left.png");
             // and redraw to have a new picture with the new coordinates
-            repaint ( );
+        }
+        repaint ( );
         }
     }
 
