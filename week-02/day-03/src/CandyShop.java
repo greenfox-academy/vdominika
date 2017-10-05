@@ -16,4 +16,6 @@ public class CandyShop{
         System.out.println(arrayList);
     }
 }
-
+// OR
+//   arrayList.set(1, "Croissant");
+//   arrayList.set(3, "Ice Cream";
