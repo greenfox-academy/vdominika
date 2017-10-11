@@ -29,8 +29,8 @@ public class Matrix {
     }
 
     public static void matrixCreator (int [][] matrix) {
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4 ; j++) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length ; j++) {
                 if (i == j){
                     matrix [i][j] = 1;
                 }else {
@@ -38,8 +38,8 @@ public class Matrix {
                 }
             }
         }
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4 ; j++) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length ; j++) {
                 System.out.print (matrix[i][j] + " " );
             }
             System.out.println (" " );
