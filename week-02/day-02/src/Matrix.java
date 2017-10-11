@@ -10,13 +10,39 @@
 
 public class Matrix {
 
+    //    public static void main(String[] args) {
+//        String [][] numbers = {
+//            {"0", "1"}
+//        };
+//        System.out.println (numbers[0][1] + numbers [0][0] + numbers[0][0] + numbers[0][0]);
+//        System.out.println (numbers[0][0] + numbers [0][1] + numbers[0][0] + numbers[0][0]);
+//        System.out.println (numbers[0][0] + numbers [0][0] + numbers[0][1] + numbers[0][0]);
+//        System.out.println (numbers[0][0] + numbers [0][0] + numbers[0][0] + numbers[0][1]);
+//    }
+
+// OR, as per the task asks:
+
     public static void main(String[] args) {
-        String [][] numbers = {
-            {"0", "1"}
-        };
-        System.out.println (numbers[0][1] + numbers [0][0] + numbers[0][0] + numbers[0][0]);
-        System.out.println (numbers[0][0] + numbers [0][1] + numbers[0][0] + numbers[0][0]);
-        System.out.println (numbers[0][0] + numbers [0][0] + numbers[0][1] + numbers[0][0]);
-        System.out.println (numbers[0][0] + numbers [0][0] + numbers[0][0] + numbers[0][1]);
+        int[][] matrix = new int[4][4];
+
+        matrixCreator ( matrix);
+    }
+
+    public static void matrixCreator (int [][] matrix) {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4 ; j++) {
+                if (i == j){
+                    matrix [i][j] = 1;
+                }else {
+                    matrix [i][j] = 0;
+                }
+            }
+        }
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4 ; j++) {
+                System.out.print (matrix[i][j] + " " );
+            }
+            System.out.println (" " );
+        }
     }
 }
