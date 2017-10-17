@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dominoes {
+public class Dominoes implements Comparable<Dominoes>{
+
     public static void main(String[] args) {
         List<Domino> dominoes = initializeDominoes();
         // You have the list of Dominoes
@@ -36,4 +37,10 @@ public class Dominoes {
         return dominoes;
     }
 
-}
+    public int compareTo(Dominoe compareValue) {
+
+        int compareValues = ((Dominoes) compareValues).getValue();
+
+        return this.value - compareValue;
+
+    }

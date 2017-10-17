@@ -1,4 +1,6 @@
-public class Student extends Person {
+import java.lang.Cloneable;
+
+public class Student extends Person implements Cloneable {
 
     String previousOrganization;
     int skippedDays;
@@ -21,6 +23,15 @@ public class Student extends Person {
     }
     public Student(String name, int age, String gender, String previousOrganization){
         skippedDays = 0;
+    }
+
+    public Student clone() {
+        return new Student (this.name, this.age, this.gender, this.previousOrganization)
+    }
+
+    public static void main(String[] args) {
+        Student john = new Student("John Doe", 20, "male", "BME");
+        Student johnTheClone = john.clone();
     }
 
 }
