@@ -1,5 +1,4 @@
-
-package com.greenfox.todo.model;
+package com.greenfocacademy.todoproject.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
