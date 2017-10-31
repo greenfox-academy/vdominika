@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
     <title>Todos for today</title>
 </head>
 <body>
 <h1>Todos for today:</h1>
-<ol>
-    <li>Start the day</li>
-    <li>Finish H2 workshop 1</li>
-    <li>Finish JPA workshop 2</li>
-    <li>Create CRUD project</li>
+<ol th:each="todo:${todos}">
+    <li th:text = "${todo.getTitle()}"></li>
 </ol>
-<p th:text="${todos}"></p>
 </body>
 </html>
