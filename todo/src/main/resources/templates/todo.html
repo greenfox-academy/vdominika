@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
     <title>Todos for today</title>
@@ -12,5 +12,6 @@
     <li>Finish JPA workshop 2</li>
     <li>Create CRUD project</li>
 </ol>
+<p th:text="${todos}"></p>
 </body>
 </html>
