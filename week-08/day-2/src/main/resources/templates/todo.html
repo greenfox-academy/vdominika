@@ -6,8 +6,24 @@
 </head>
 <body>
 <h1>Todos for today:</h1>
-<ol th:each="todo:${todos}">
-    <li th:text = "${todo.getTitle()}"></li>
-</ol>
+<table width="800" cellspacing="20" cellpadding="10" border="5" align="left" border-color="#ff6600">
+    <tr>
+        <th>ID</th>
+        <th>ACTION</th>
+        <th>DONE</th>
+        <th>URGENT</th>
+        <th style="border: none"></th>
+        <th style="border: none"></th>
+    </tr>
+    <tr th:each="todo : ${todos}">
+        <td th:text="${todo.getId()}"></td>
+        <td th:text="${todo.getTitle()}"></td>
+        <td th:text="${todo.isDone()}"></td>
+        <td th:text="${todo.isUrgent()}"></td>
+        <td th:text="${todo.getId()}"></td>
+        <td><a th:href="@{'/todo'+${todo.getId()}+'/delete'}">delete</a></td>
+        <td><a th:href="@{'/todo'+${todo.getId()}+'/edit'}">edit</a></td>
+    </tr>
+</table>
 </body>
 </html>
