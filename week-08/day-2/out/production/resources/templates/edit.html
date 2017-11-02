@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Todo app</title>
+</head>
+<body>
+<ul style="list-style-type:none">
+    <li><a href="/todo/list">List of todos</a></li>
+</ul>
+<h2>Add new todos:</h2>
+<form th:action="@{/todo/edit}" method="post">
+    <input type="text" th:text="${title}" name="title"/>
+    <button type="submit" value="Submit">Submit</button>
+    <input type="checkbox" th:checked="$(title)" name="title"/>
+</form>
+</body>
+</html>
