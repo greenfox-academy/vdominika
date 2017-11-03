@@ -10,7 +10,7 @@
 </ul>
 <h2>Add new todos:</h2>
 <form th:action="@{/todo/create}" method="post">
-    <input type="text" th:text="${title}" name="title"/>
+    <input type="text" th:text="${content}" name="title"/>
     <button type="submit" value="Submit">Submit</button>
 </form>
 </body>

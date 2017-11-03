@@ -14,7 +14,7 @@ public class RedditController {
     @Autowired
     RedditRepo redditRepo;
 
-    @RequestMapping({"/","/posts"})
+    @RequestMapping({"","/","/posts"})
     public String list(Model model){
         model.addAttribute("posts", redditRepo.findAll());
         return "posts";
