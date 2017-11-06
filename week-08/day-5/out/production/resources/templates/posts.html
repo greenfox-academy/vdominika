@@ -7,21 +7,23 @@
 <body>
 <h1>Posts for today:</h1>
 <ul style="list-style-type:none">
-    <li><a href="/todo/create">New post</a></li>
+    <li><a href="/posts/create">New post</a></li>
 </ul>
 <table width="800" cellspacing="20" cellpadding="10" border="5" align="left" border-color="#ff6600">
     <tr>
         <th>SCORE</th>
         <th>ACTION</th>
         <th>CONTENT</th>
+        <th>Creation Date</th>
         <th style="border: none"></th>
         <th style="border: none"></th>
     </tr>
     <tr th:each="post : ${posts}">
-        <td th:text="${post.getScore()}"></td>
-        <td><a th:href="@{'/post/'+${post.getScore()}+'/plus'}">+</a></td>
-        <td><a th:href="@{'/post/'+${post.getScore()}+'/minus'}">-</a></td>
-        <td th:text="${post.getContent()}"></td>
+        <td th:text="${post.score}"></td>
+        <td><a th:href="@{/posts/{id}/upVote(id=${post.id})}">+</a>
+        <a th:href="@{/posts/{id}/downVote(id=${post.id})}">-</a></td>
+        <td th:text="${post.content}"></td>
+        <td th:text="${post.date}"></td>
     </tr>
 </table>
 </body>

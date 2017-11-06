@@ -5,12 +5,9 @@
     <title>Create new post</title>
 </head>
 <body>
-<ul style="list-style-type:none">
-    <li><a href="/posts/add">Please add new post</a></li>
-</ul>
-<h2>Add new todos:</h2>
-<form th:action="@{/todo/create}" method="post">
-    <input type="text" th:text="${content}" name="title"/>
+<h2>Create new post:</h2>
+<form action="/posts/create" method="post">
+    <input name="content"/>
     <button type="submit" value="Submit">Submit</button>
 </form>
 </body>
