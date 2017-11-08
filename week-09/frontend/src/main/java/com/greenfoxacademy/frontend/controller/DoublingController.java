@@ -1,7 +1,6 @@
 package com.greenfoxacademy.frontend.controller;
 
-import com.greenfoxacademy.frontend.model.Doubling;
-import com.greenfoxacademy.frontend.model.ErrorMessage;
+import com.greenfoxacademy.frontend.model.*;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.*;
 

@@ -32,7 +32,4 @@ public class ArrayHandler {
     }
 
     ArrayList<Integer> number;
-
-    ActionOfArrayHandler()
-        return.type ResponseEntity
 }
