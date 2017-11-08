@@ -77,5 +77,26 @@ public class UserControllerTest {
                 .andExpect(status().isNotFound());
 
     }
-    
+
+    @Test
+    public void testDoUntilSumFunction() throws Exception {
+        mockMvc.perform(post("/dountil/sum")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"until\": 12}"))
+                .andExpect(jsonPath("$.result", is(78)));
+    }
+
+    @Test
+    public void testDoUntilFactorioFunction() throws Exception {
+        mockMvc.perform(post("/dountil/factor")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"until\": 3}"))
+                .andExpect(jsonPath("$.result", is(6)));
+    }
+
+    @Test
+    public void testDoUntilError() throws Exception {
+        mockMvc.perform(post("/dountil/sum"))
+                .andExpect(jsonPath("$.error", is("Please provide a number!")));
+    }
 }
