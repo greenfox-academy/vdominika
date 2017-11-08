@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class ArrayHandler {
 
     String what;
+    ArrayList<Integer> number;
 
     public String getWhat() {
         return what;
@@ -31,5 +32,4 @@ public class ArrayHandler {
         this.number = number;
     }
 
-    ArrayList<Integer> number;
 }
