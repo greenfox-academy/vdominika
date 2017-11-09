@@ -2,14 +2,18 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet"/>
     <title>Dominika reddit</title>
 </head>
 <body>
+<div class="container-fluid">
 <h1>Posts for today:</h1>
 <ul style="list-style-type:none">
     <li><a href="/posts/create">New post</a></li>
 </ul>
-<table width="800" cellspacing="20" cellpadding="10" border="5" align="left" border-color="#ff6600">
+    <table class="table table-hover">
     <tr>
         <th>SCORE</th>
         <th>ACTION</th>
@@ -26,5 +30,8 @@
         <td th:text="${post.date}"></td>
     </tr>
 </table>
+<script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+</div>
 </body>
 </html>
